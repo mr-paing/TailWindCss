@@ -1,0 +1,159 @@
+https://tailwindcss.com
+
+Integrate Methods
+1. Using CDN Link (Content Deliver Network)
+2. Using TailWind CLI
+3. Using PostCss
+
+(1 is joined CDN like to join GoogleFontAPI)
+(2,3 join with NoteJS)
+
+
+Terminal = VS Code
+NoteJS
+
+For Linux
+sudo apt update
+sudo apt upgrade -y
+sudo apt install nodejs
+node -v
+
+for windows
+check version nodeJs is or not
+cmd
+node -v
+_______________________________________________
+
+
+1. Using CDN Link (Connect Deliver Netwrok)
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    (css code များကို js နဲ့ compile လုပ်ပြီးသုံးထားသည့် အတွက် cdn link ကို title အောက်က internal css ချိတ်သည့်နေရာတွင် ထားက ပိုကောင်းသည်, js နေရာတွင် ထားလည်းရသည်) 
+
+
+3. Using PostCSS 
+ 🔹Open folder "usingpostcss"
+ 🔹open terminal
+=>npm install -D tailwindcss postcss autoprefixer
+🔹Create tailwind.config.js file
+=>npx tailwindcss init
+🔹 Add PostCSS file
+=>Create postcss.config.js file and insert in that
+	module.exports = {
+  	plugins: {
+    		tailwindcss: {},
+    		autoprefixer: {},
+ 		 }
+	}
+
+=>Create folder and naming "public"
+=> go to tailwind.config.js and past as follow 
+        /** @type {import('tailwindcss').Config} */
+        module.exports = {
+        content: ["./src/**/*.{html,js}"],
+        theme: {
+            extend: {},
+        },
+        plugins: [],
+        }
+=> and write down in content:["./public/**/*.html"]
+
+Note::
+. = current folder
+** = all folder of inside in public folder
+* = all html files
+
+🔹 Create Tailwind main files
+=> create new folder and naming "tailwind"
+=> create new file and naming "main.css" in "tailwind" folder
+add as follow -	
+    @tailwind base;
+	@tailwind components;
+	@tailwind utilities;
+
+=> Build process
+- write down "npm init -y" in terminal ( so , it's will create package.json)
+- write down in package.json > "scripts": {
+	"test": "echo \"Error: no test specified\" && exit 1",
+	"build": "tailwind -i ./tailwind/main.css -o ./public/tailwind.css"
+  },
+Note::
+-i = install
+-o = open
+
+= go to terminal and enter "npm run build"
+
+=> Watch 
+    go to package.json , write down 
+            "scripts": {
+            "test": "echo \"Error: no test specified\" && exit 1",
+            "build": "tailwind -i ./tailwind/main.css -o ./public/tailwind.css",
+            "watch": "tailwind -i ./tailwind/main.css -o ./public/tailwind.css --watch",
+            "watch": "tailwind -i ./tailwind/main.css -o ./public/tailwind.css --w"
+        }
+## both --watch or --w can work
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+CDN 
+
+BS
+.text-primary{
+    color:blue;
+}
+
+.text-danger{
+    color:red;
+}
+
+.text-success{
+    color:green;
+}
+
+Project
+<p calss="text-success">Hey this is Example to join with Bootstrap</p>
+
+.......................
+
+TailWind Css
+.text-primary{
+    color:blue;
+}
+
+.text-danger{
+    color:red;
+}
+
+.text-success{
+    color:green;
+}
+
+comp
+
+.text-success{
+    color:green;
+}
+
+Project
+<p calss="text-success">Hey this is Example to join with Bootstrap</p>

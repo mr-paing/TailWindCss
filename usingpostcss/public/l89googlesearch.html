@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Google Search</title>
+
+    <link href="./tailwind.css" rel="stylesheet" type="text/css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    
+    <div class="bg-black md:bg-white h-screen flex flex-col justify-center items-center">
+
+        <div>
+            <img src="https://www.freepnglogos.com/uploads/google-logo-png/google-logo-png-google-sva-scholarship-20.png" class="w-[400px] h-[150px]" alt="googlelogo">
+        </div>
+
+        <div class="w-[92%] md:w-[600px] text-white md:text-black flex items-center border rounded-full hover:shadow-md mx-auto mt-7">
+
+            <div class="pl-5">
+                <i class="fas fa-search"></i>
+            </div>
+            <input type="text" class="w-full bg-transparent rounded-full outline-none py-[16px] pl-4" />
+            <div class="pr-5">
+                <i class="fas fa-microphone"></i>
+            </div>
+
+        </div>
+
+        <div class="flex space-x-12 mt-5">
+            <button class="bg-slate-200 shadow-2xl px-2 py-1 lowercase lg:capitalize hover:bg-slate-400">Google Search</button>
+            <button class="bg-slate-200 shadow-2xl px-2 py-1 lowercase lg:capitalize hover:bg-slate-400">I'm feeling lucky</button>
+        </div>
+
+    </div>
+
+</body>
+</html>

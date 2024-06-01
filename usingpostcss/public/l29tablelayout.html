@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table Layout</title>
+    <link href="./tailwind.css" rel="stylesheet" type="text/css" />
+
+    <style type="text/css">
+        table{
+            width: 500px;
+        }
+    </style>
+    
+</head>
+<body>
+    
+    <h1>Table Layout</h1>
+
+    <div>
+        <table class="table-auto border-2 border-collapse">
+            <thead>
+                <tr>
+                    <th class="border">ID</th>
+                    <th class="border">Name</th>
+                    <th class="border">Age</th>
+                    <th class="border">City</th>
+                    <th class="border">Address</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="border">1</td>
+                    <td class="border">Aung Aung</td>
+                    <td class="border">30</td>
+                    <td class="border">Yangon</td>
+                    <td class="border">Cecilia Chapman 711-2880 Nulla St.Mankato Mississippi 96522 (257) 563-7401</td>
+                </tr>
+                <tr>
+                    <td class="border">2</td>
+                    <td class="border">Kyaw Kyaw</td>
+                    <td class="border">20</td>
+                    <td class="border">Mandalay</td>
+                    <td class="border">Cecilia Chapman 711-2880 Nulla St.Mankato Mississippi 96522 (257) 563-7401</td>
+                </tr>
+                <tr>
+                    <td class="border">3</td>
+                    <td class="border">Su Su</td>
+                    <td class="border">32</td>
+                    <td class="border">Yangon</td>
+                    <td class="border">Cecilia Chapman 711-2880 Nulla St.Mankato Mississippi 96522 (257) 563-7401</td>
+                </tr>
+                <tr>
+                    <td class="border">4</td>
+                    <td class="border">Tun Tun</td>
+                    <td class="border">20</td>
+                    <td class="border">Yangon</td>
+                    <td class="border">Cecilia Chapman 711-2880 Nulla St.Mankato Mississippi 96522 (257) 563-7401</td>
+                </tr>
+                <tr>
+                    <td class="border">5</td>
+                    <td class="border">Hla Hla</td>
+                    <td class="border">30</td>
+                    <td class="border">Yangon</td>
+                    <td class="border">Cecilia Chapman 711-2880 Nulla St.Mankato Mississippi 96522 (257) 563-7401</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <hr/>
+
+    <div>
+        <table class="table-fixed border-2 border-separate border-spacing-1.5">
+            <thead>
+                <tr>
+                    <th class="border">ID</th>
+                    <th class="border">Name</th>
+                    <th class="border">Age</th>
+                    <th class="border">City</th>
+                    <th class="border">Address</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="border">1</td>
+                    <td class="border">Aung Aung</td>
+                    <td class="border">30</td>
+                    <td class="border">Yangon</td>
+                    <td class="border">Cecilia Chapman 711-2880 Nulla St.Mankato Mississippi 96522 (257) 563-7401</td>
+                </tr>
+                <tr>
+                    <td class="border">2</td>
+                    <td class="border">Kyaw Kyaw</td>
+                    <td class="border">20</td>
+                    <td class="border">Mandalay</td>
+                    <td class="border">Cecilia Chapman 711-2880 Nulla St.Mankato Mississippi 96522 (257) 563-7401</td>
+                </tr>
+                <tr>
+                    <td class="border">3</td>
+                    <td class="border">Su Su</td>
+                    <td class="border">32</td>
+                    <td class="border">Yangon</td>
+                    <td class="border">Cecilia Chapman 711-2880 Nulla St.Mankato Mississippi 96522 (257) 563-7401</td>
+                </tr>
+                <tr>
+                    <td class="border">4</td>
+                    <td class="border">Tun Tun</td>
+                    <td class="border">20</td>
+                    <td class="border">Yangon</td>
+                    <td class="border">Cecilia Chapman 711-2880 Nulla St.Mankato Mississippi 96522 (257) 563-7401</td>
+                </tr>
+                <tr>
+                    <td class="border">5</td>
+                    <td class="border">Hla Hla</td>
+                    <td class="border">30</td>
+                    <td class="border">Yangon</td>
+                    <td class="border">Cecilia Chapman 711-2880 Nulla St.Mankato Mississippi 96522 (257) 563-7401</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    </div>
+</body>
+</html>
+
+<!-- 
+table-auto                  table-layout:auto;
+table-fixed                 table-layout:fixed;
+
+
+border-collapse             border-collapse:collapse; 
+border-separate             border-collapse:separate;
+
+x0.5
+border-spacing-0            border-spacing:0px 0px;
+border-spacing-x-0          
+border-spacing-x-0 
+
+border-spacing-px           border-spacing:1px 1px; 
+border-spacing-x-px          
+border-spacing-x-px
+
+border-spacing-0.5 
+border-spacing-x-0.5          
+border-spacing-x-0.5
+
+
+border-spacing-1 
+border-spacing-x-1          
+border-spacing-x-1
+
+border-spacing-1.5 
+border-spacing-x-1.5          
+border-spacing-x-1.5
+
+border-spacing-2 
+border-spacing-x-2          
+border-spacing-x-2
+
+border-spacing-2.5 
+border-spacing-x-2.5          
+border-spacing-x-2.5
+
+border-spacing-3 
+border-spacing-x-3          
+border-spacing-x-3
+
+border-spacing-3.5 
+border-spacing-x-3.5          
+border-spacing-x-3.5
+
+border-spacing-4 
+border-spacing-x-4          
+border-spacing-x-4
+
+x1
+border-spacing-5 
+border-spacing-x-5          
+border-spacing-x-5
+
+border-spacing-6 
+border-spacing-x-6          
+border-spacing-x-6
+
+border-spacing-7 
+border-spacing-x-7          
+border-spacing-x-7
+
+border-spacing-8 
+border-spacing-x-8          
+border-spacing-x-8
+
+border-spacing-9 
+border-spacing-x-9          
+border-spacing-x-9
+
+border-spacing-10 
+border-spacing-x-10          
+border-spacing-x-10
+
+border-spacing-11 
+border-spacing-x-11          
+border-spacing-x-11
+
+border-spacing-12 
+border-spacing-x-12          
+border-spacing-x-12
+
+x0.5
+    0.5
+    1
+    2
+    3
+    4
+
+x1
+    5
+    6
+    7
+    8
+    9
+    10
+    11
+    12
+
+x2
+    14
+    16
+    18
+
+x4
+    20 
+    24
+    28  
+    32
+    36
+    40
+    44
+    48
+    52
+    56
+    60
+    64
+
+x8
+    72
+    80
+
+x16 
+    96
+
+
+
+
+
+
+
+ -->

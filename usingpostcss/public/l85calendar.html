@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calendar</title>
+
+    <link href="./tailwind.css" rel="stylesheet" type="text/css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body class="bg-stone-100">
+   <div class="h-screen flex justify-center items-center">
+
+        <div class="w-[700px] bg-[#f4f4f4] rounded-xl p-5">
+
+            <div class="flex justify-center items-center px-4 py-8">
+
+                <div class="max-w-sm w-full bg-white shadow-lg rounded-t p-5">
+
+                    <div class="text-center flex justify-between px-4">
+                        <span class="font-bold text-gray-800">Apr 2024</span>
+                        <div>
+                            <button type="button" class="text-gray-800 hover:text-gray-400">Previous</button>
+                            <button type="button" class="text-gray-800 hover:text-gray-400">Next</button>
+                        </div>
+                    </div>
+
+                <div class="flex justify-between items-center pt-12">
+                    <table class="w-full">
+                        <thead>
+                            <tr>
+                                <th>
+                                    <div class="w-full flex justify-center">
+                                        <p class="text-base font-medium text-gray-800 text-center">Sun</p>
+                                    </div>
+                                </th>
+
+                                <th>
+                                    <div class="w-full flex justify-center">
+                                        <p class="text-base font-medium text-gray-800 text-center">Mon</p>
+                                    </div>
+                                </th>
+
+
+                                <th>
+                                    <div class="w-full flex justify-center">
+                                        <p class="text-base font-medium text-gray-800 text-center">Tue</p>
+                                    </div>
+                                </th>
+
+                                <th>
+                                    <div class="w-full flex justify-center">
+                                        <p class="text-base font-medium text-gray-800 text-center">Wed</p>
+                                    </div>
+                                </th>
+
+                                <th>
+                                    <div class="w-full flex justify-center">
+                                        <p class="text-base font-medium text-gray-800 text-center">Thu</p>
+                                    </div>
+                                </th>
+
+                                <th>
+                                    <div class="w-full flex justify-center">
+                                        <p class="text-base font-medium text-gray-800 text-center">Fri</p>
+                                    </div>
+                                </th>
+
+                                <th>
+                                    <div class="w-full flex justify-center">
+                                        <p class="text-base font-medium text-gray-800 text-center">Sat</p>
+                                    </div>
+                                </th>
+                            </tr>
+                        </thead>
+                        <tbody>
+
+                            <tr>
+                                <td class="pt-6">
+                                    <div class="w-full text-gray-400 cursor-pointer flex justify-center items-center">28</div>
+                                </td>
+
+                                <td class="pt-6">
+                                    <div class="w-full text-gray-400 cursor-pointer flex justify-center items-center">29</div>
+                                </td>
+
+                                <td class="pt-6">
+                                    <div class="w-full text-gray-400 cursor-pointer flex justify-center items-center">30</div>
+                                </td>
+
+                                <td class="pt-6">
+                                    <div class="w-full text-gray-400 cursor-pointer flex justify-center items-center">31</div>
+                                </td>
+
+                                <td class="pt-6">
+                                    <div class="w-full text-gray-600 cursor-pointer flex justify-center items-center">1</div>
+                                </td>
+
+                                <td class="pt-6">
+                                    <div class="w-full text-gray-600 cursor-pointer flex justify-center items-center">2</div>
+                                </td>
+
+                                <td class="pt-6">
+                                    <a href="javascript:void(0);" class="w-8 h-8 bg-indigo-700 text-white font-medium rounded-full cursor-pointer flex justify-center items-center hover:bg-pink-500 focus:outline-none focus:bg-rose-700 focus:ring-slate-400 focus:ring-2 focus:ring-offset-2">3</a>                
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td class="pt-6">
+                                    <div class="w-full text-gray-600 cursor-pointer flex justify-center items-center">4</div>
+                                </td>
+
+                                <td class="pt-6">
+                                    <div class="w-full text-gray-600 cursor-pointer flex justify-center items-center">5</div>
+                                </td>
+
+                                <td class="pt-6">
+                                    <div class="w-full text-gray-600 cursor-pointer flex justify-center items-center">6</div>
+                                </td>
+
+                                <td class="pt-6">
+                                    <div class="w-full text-gray-600 cursor-pointer flex justify-center items-center">7</div>
+                                </td>
+
+                                <td class="pt-6">
+                                    <div class="w-full text-gray-600 cursor-pointer flex justify-center items-center">8</div>
+                                </td>
+
+                                <td class="pt-6">
+                                    <div class="w-full text-gray-600 cursor-pointer flex justify-center items-center">9</div>
+                                </td>
+
+                                <td class="pt-6">
+                                    <div class="w-full text-gray-600 cursor-pointer flex justify-center items-center">10</div>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td class="pt-6">
+                                    <div class="w-full text-gray-600 cursor-pointer flex justify-center items-center">11</div>
+                                </td>
+
+                                <td class="pt-6">
+                                    <div class="w-full text-gray-600 cursor-pointer flex justify-center items-center">12</div>
+                                </td>
+
+                                <td class="pt-6">
+                                    <div class="w-full text-gray-600 cursor-pointer flex justify-center items-center">13</div>
+                                </td>
+
+                                <td class="pt-6">
+                                    <div class="w-full text-gray-600 cursor-pointer flex justify-center items-center">14</div>
+                                </td>
+
+                                <td class="pt-6">
+                                    <div class="w-full text-gray-600 cursor-pointer flex justify-center items-center">15</div>
+                                </td>
+
+                                <td class="pt-6">
+                                    <div class="w-full text-gray-600 cursor-pointer flex justify-center items-center">16</div>
+                                </td>
+
+                                <td class="pt-6">
+                                    <div class="w-full text-gray-600 cursor-pointer flex justify-center items-center">17</div>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td class="pt-6">
+                                    <div class="w-full text-gray-600 cursor-pointer flex justify-center items-center">18</div>
+                                </td>
+
+                                <td class="pt-6">
+                                    <div class="w-full text-gray-600 cursor-pointer flex justify-center items-center">19</div>
+                                </td>
+
+                                <td class="pt-6">
+                                    <div class="w-full text-gray-600 cursor-pointer flex justify-center items-center">20</div>
+                                </td>
+
+                                <td class="pt-6">
+                                    <div class="w-full text-gray-600 cursor-pointer flex justify-center items-center">21</div>
+                                </td>
+
+                                <td class="pt-6">
+                                    <div class="w-full text-gray-600 cursor-pointer flex justify-center items-center">22</div>
+                                </td>
+
+                                <td class="pt-6">
+                                    <div class="w-full text-gray-600 cursor-pointer flex justify-center items-center">23</div>
+                                </td>
+
+                                <td class="pt-6">
+                                    <div class="w-full text-gray-600 cursor-pointer flex justify-center items-center">24</div>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td class="pt-6">
+                                    <div class="w-full text-gray-600 cursor-pointer flex justify-center items-center">25</div>
+                                </td>
+
+                                <td class="pt-6">
+                                    <div class="w-full text-gray-600 cursor-pointer flex justify-center items-center">26</div>
+                                </td>
+
+                                <td class="pt-6">
+                                    <div class="w-full text-gray-600 cursor-pointer flex justify-center items-center">27</div>
+                                </td>
+
+                                <td class="pt-6">
+                                    <div class="w-full text-gray-600 cursor-pointer flex justify-center items-center">28</div>
+                                </td>
+
+                                <td class="pt-6">
+                                    <div class="w-full text-gray-600 cursor-pointer flex justify-center items-center">29</div>
+                                </td>
+
+                                <td class="pt-6">
+                                    <div class="w-full text-gray-600 cursor-pointer flex justify-center items-center">30</div>
+                                </td>
+
+                                <td class="pt-6">
+                                    <div class="w-full text-gray-400 cursor-pointer flex justify-center items-center">01</div>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+            </div>
+
+            </div>
+
+        </div>
+
+   </div>
+
+</body>
+</html>
